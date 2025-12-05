@@ -1,7 +1,7 @@
 FROM php:7.3-apache
 
 # Install mysqli & pdo_mysql
-RUN docker-php-ext-install mysqli pdo_mysql
+RUN docker-php-ext-install mysqli
 
 # Aktifkan mod_rewrite
 RUN a2enmod rewrite
